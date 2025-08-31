@@ -39,6 +39,34 @@
             //Console.WriteLine(Result); // 2 
             #endregion
 
+            #region Example 02
+
+            //int[] Numbers = { 7, 6, 5, 8, 9, 4, 1, 3, 2 };
+
+            //SortingAlgorithms<int>.BubbleSort(Numbers, SortingStrategy.SortAsc); // To Sort In Asc
+
+            //Func<int, int, bool>? sortingStrategy01 = SortingStrategy.SortDesc;
+
+            //SortingAlgorithms<int>.BubbleSort(Numbers, sortingStrategy01); // To Sort In Desc
+
+            //foreach (int item in Numbers) Console.Write($"{item} ");
+
+            #endregion
+
+            #region Example 02 With Generics 
+
+            //string[] Names = ["Omar", "Mohamed", "Amr", "Salma"];
+
+            //Func<string, string, bool> sortingStrategy02 = SortingStrategy.SortAsc;
+
+            //SortingAlgorithms<string>.BubbleSort(Names, sortingStrategy02);
+
+            //SortingAlgorithms<string>.BubbleSort(Names, SortingStrategy.SortDesc);
+
+            //foreach (string item in Names) Console.Write($"{item} "); // Mohamed Salma Omar Amr
+
+            #endregion
+
         }
     }
 }
