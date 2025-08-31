@@ -172,6 +172,69 @@
 
             #endregion
 
+            #region List Methods [Take Function As A Parameter]
+
+            //List<int> Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+            //bool Result = Numbers.Exists(X => X == 10); // True
+
+            //int Element = Numbers.Find(N => N % 2 == 0); // 2
+
+            //Element = Numbers.FindLast(N => N % 2 == 0); // 10
+
+            //int Index = Numbers.FindIndex(N => N % 2 == 0); // 1
+
+            //Index = Numbers.FindLastIndex(N => N % 2 == 0); // 9
+
+            //List<int> OddNumbers = Numbers.FindAll(N => N % 2 == 1); // 1 3 5 7 9
+
+            //foreach (int item in Numbers) Console.Write($"{item} "); // 1 2 3 4 5 6 7 8 9 10
+
+            //Numbers.ForEach(N => Console.Write($"{N} ")); // 1 2 3 4 5 6 7 8 9 10
+
+            //foreach (int item in Numbers)
+            //{
+            //	++item; // Invalid 
+            //}
+
+            //Numbers.ForEach(X => ++X); // Invalid [Value Type]
+
+            //List<Employee> employees = new List<Employee>()
+            //{
+            //	new Employee() { Id = 1, Name = "Ali", Age = 25 },
+            //	new Employee() { Id = 2, Name = "Omar", Age = 21 },
+            //	new Employee() { Id = 3, Name = "Ahmed", Age = 30 }
+            //};
+
+            //foreach (Employee employee in employees) Console.WriteLine(employee);
+
+            ////employees.ForEach(E => E.Age++);
+
+            //foreach (Employee item in employees)
+            //{
+            //	item.Age++;
+            //}
+
+            //Console.WriteLine("========================");
+            //foreach (Employee employee in employees) Console.WriteLine(employee);
+
+            //Console.WriteLine("Before Remove");
+            //Numbers.ForEach(N => Console.Write($"{N} ")); // 1 2 3 4 5 6 7 8 9 10
+
+            //int Count = Numbers.RemoveAll(X => X % 3 == 0);
+
+            //Console.WriteLine("\nAfter Remove");
+            //Numbers.ForEach(N => Console.Write($"{N} ")); // 1 2 4 5 7 8 10
+            //Console.WriteLine(Count); // 3
+
+            //bool Flag = Numbers.TrueForAll(X => X % 2 == 0); // False 
+            //Console.WriteLine(Flag);
+            //Flag = Numbers.TrueForAll(X => ++X > 1); // True 
+            //Console.WriteLine(Flag);
+
+
+            #endregion
+
         }
     }
 }
