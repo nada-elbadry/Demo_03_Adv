@@ -67,6 +67,81 @@
 
             #endregion
 
+
+            #region Example 03 
+
+            //List<int> Numbers = Enumerable.Range(1, 100).ToList();
+
+            //List<int> OddNumbers = FilterLists.FindElements(Numbers, FiltersOfList.CheckOdd);
+
+            //Predicate<int> filterList = FiltersOfList.CheckEven;
+
+            //List<int> EvenNumbers = FilterLists.FindElements(Numbers, filterList);
+
+            //List<int> NumbersDivisableBy7 = FilterLists.FindElements(Numbers, FiltersOfList.DivisibleBy7);
+
+            //foreach (int item in NumbersDivisableBy7) Console.Write($"{item} ");
+            //// 7 14 21 28 35 42 49 56 63 70 77 84 91 98
+
+
+            //List<string> Names = ["Ahmed", "Aya", "Khaled", "Rawan", "Amr", "Youssef"];
+
+            //List<string> NamesWithLengthMoreThanFour = FilterLists.FindElements<string>(Names, FiltersOfList.CheckLengthMoreThanFour);
+
+            //foreach (string item in NamesWithLengthMoreThanFour) Console.Write($"{item} ");
+            //// Ahmed Khaled Rawan Youssef
+
+
+            #endregion
+
+            #region Built In Delegate [Func , Predicate , Action]
+
+            //Action action1 = TestBuiltInDelegate.Print;
+            //action1.Invoke(); // Hello Route
+            //action1(); // Hello Route
+
+
+            //Action<string> action2 = TestBuiltInDelegate.Print;
+            //action2.Invoke("Omar"); // Hello Omar
+            //action2("Omar");// Hello Omar
+
+
+            //Func<int, string> func = TestBuiltInDelegate.Casting;
+            //string Number = func.Invoke(10); // 10
+            //Number = func(10); // 10
+
+            //Predicate<int> predicate = TestBuiltInDelegate.CheckPositive;
+            //bool Result = predicate.Invoke(10); // True 
+            //Result = predicate(10); // True 
+
+            #endregion
+
+            #region Anonymous Method And Lambda Expression
+
+            ////Action action1 = delegate { Console.WriteLine("Hello Route"); }; // Anonymous Method 
+            //Action action1 = () => Console.WriteLine("Hello Route");  // Lambda Expression
+            //action1.Invoke(); // Hello Route
+            //action1(); // Hello Route
+
+            ////Action<string> action2 = delegate (string name) { Console.WriteLine($"Hello {name}"); }; // Anonymous Method 
+            //Action<string> action2 = name =>  Console.WriteLine($"Hello {name}"); // Lambda Expression
+            //action2.Invoke("Omar"); // Hello Omar
+            //action2("Omar");// Hello Omar
+
+
+            ////Func<int, string> func = delegate (int number) { return number.ToString(); }; // Anonymous Method
+            //Func<int, string> func = number => number.ToString();  // Lambda Expression 
+
+            //string Number = func.Invoke(10); // 10
+            //Number = func(10); // 10
+
+            ////Predicate<int> predicate = delegate (int number) { return number > 0; }; // Anonymous Method 
+            //Predicate<int> predicate = number => number > 0; // Lambda Expression 
+            //bool Result = predicate.Invoke(10); // True 
+            //Result = predicate(10); // True 
+
+            #endregion
+
         }
     }
 }
